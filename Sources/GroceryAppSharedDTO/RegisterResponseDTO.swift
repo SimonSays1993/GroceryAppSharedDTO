@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct RegisterResponseDTO: Codable, Sendable {
+public struct RegisterResponseDTO: Codable, @unchecked Sendable {
     public let error: Bool
     public var reason: String?
     
